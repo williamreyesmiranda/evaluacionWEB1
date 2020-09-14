@@ -1,83 +1,91 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simple Theme</title>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div class="container">
-  <header>
-    <div class="primary_header">
-      <h1 class="title"> SIMPLE</h1>
-    </div>
-    <nav class="secondary_header" id="menu">
-      <ul>
-        <li>ABOUT</li>
-        <li>WORK</li>
-        <li>PORTFOLIO</li>
-        <li>SERVICES</li>
-        <li>CLIENTS</li>
-        <li>CONTACT</li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <h2 class="noDisplay">Main Content</h2>
-    <article class="left_article">
-      <h3>content heading</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </article>
-    <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
-  </section>
-  <div class="row">
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-  </div>
-  <div class="row blockDisplay">
-    <div class="column_half left_half">
-      <h2 class="column_title">LEFT COLUMN</h2>
-    </div>
-    <div class="column_half right_half">
-      <h2 class="column_title">RIGHT COLUMN</h2>
-    </div>
-  </div>
-  <div class="social">
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-  </div>
-  <footer class="secondary_header footer">
-    <div class="copyright">&copy;2015 - <strong>SIMPLE Theme</strong></div>
-  </footer>
-</div>
-</body>
-</html>
+    <?php
+    include "includes/header.php";
+    include "includes/scriptsup.php";
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evaluación WEB 1</title>
+        <link rel="icon" type="images/png" href="images/logo.png">
+
+
+    </head>
+
+    <body id="cuerpo">
+        <div class="container">
+            <section>
+                <article class="left_article">
+                    <h3>Contenido</h3>
+                    <p>Este es el contenido de trabajo para el taller propuesto por el profesor Juan Gallego,
+                        con un plazo máximo de entrega para el 1 de Octubre. <br>
+
+                    </p>
+
+                </article>
+                <aside class="right_article"><img src="img/php.png" alt="" width="400px" class="placeholder" /> </aside>
+            </section>
+            <div class="row">
+                <div class="columns">
+                <a href="punto1.php"><p class="thumbnail_align"><i class="fa fa-calculator" aria-hidden="true"></i></p>
+                    <h4>PUNTO 1</h4>
+                    <p>Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, división y
+                        multiplicación
+                        de dos números enteros almacenados en 2, variables diferentes (utilice formularios HTML). </p></a>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                    <h4>PUNTO 2</h4>
+                    <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios 
+                        calcular el índice de masa corporal.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                    <h4>TITLE</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                    <h4>TITLE</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                    <h4>TITLE</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="columns">
+                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                    <h4>TITLE4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+            </div>
+        </div>
+        <center>
+
+            <div class="navbar navbar-expand-lg " id="circulodark">
+                <div class="col-sm">
+                    Dirección: Carrera 29 N°46-36 <br>
+                    Teléfono: 301-508-4623 <br>
+                    Email: willyremi1990@gmail.com <br>
+                    Todos los derechos reservados 2020
+                </div>
+            </div>
+
+        </center>
+        <?php
+    include "includes/scriptsdown.php";
+    ?>
+    </body>
+
+    </html>

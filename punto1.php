@@ -1,4 +1,8 @@
 <?php
+include "includes/header.php";
+
+include "includes/scriptsup.php";
+
 if (!empty($_POST)) {
     $number1 = $_POST['number1'];
     $number2 = $_POST['number2'];
@@ -23,57 +27,79 @@ if (!empty($_POST)) {
             $signo="división";
             break;
     }
-    $alert="<span class=\"alert alert-success\">La <strong>".$signo."</strong> entre ".$number1." y ".$number2." es: ".$result."</span> <br><br>";
+    $alert="La <strong>".$signo."</strong> entre ".$number1." y ".$number2." es: ".$result."";
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <title>Ejercicio Punto 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
-<body>
+<body id="cuerpo">
 
     <div class="container">
-        <form class="was-validated" method="POST">
-        <h2>Calculadora</h2>
-            <div class="form-group">
-                <label for="number1">Número 1</label>
-                <input class="form-control" type="number" name="number1" id="number1"
-                    value="<?php if(!empty($_POST)){echo $number1;} ?>" required>
+        <h3 class="nav-item active">CALCULADORA</h3>
+        <form action="" name="formulario" id="formulario" method="POST">
+            <div class="soli">
+                <section class="soliturn">
+                    <h2 id="titulo">POR FAVOR INGRESE LOS DATOS </h2>
+                    <h4 style="text-align: center;">(*) Campos Obligatorios</h4><br>
+                    <!-- Número UNO -->
+                    <div class="form-group">
+                        <span id="errornumber1"></span>
+                        <input class="control" type="number" name="number1" id="number1"
+                            placeholder="Ingrese el primer número (*)"
+                            value="<?php if(!empty($_POST)){echo $number1;} ?>">
+                    </div>
+                    <!-- Número DOS -->
+                    <div class="form-group">
+                        <div>
+                            <span id="errornumber2"></span>
+                            <input class="control" type="number" name="number2" id="number2"
+                                placeholder="Ingrese el segundo número (*)"
+                                value="<?php if(!empty($_POST)){echo $number2;} ?>">
+                        </div>
 
+                        <!-- operador -->
+                        <div class="form-group">
+                            <label for="oper">Operador (*)</label>
+                            <span id="erroroper"></span>
+                            <div class="control" id="zona">
+                                <input type="radio" name="oper" id="+" value="+"
+                                    <?php if(!empty($_POST)){if($oper=='+'){echo "checked";}} ?>>Suma &nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="oper" id="-" value="-"
+                                    <?php if(!empty($_POST)){if($oper=='-'){echo "checked";}} ?>>Resta&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="oper" id="*" value="*"
+                                    <?php if(!empty($_POST)){if($oper=='*'){echo "checked";}} ?>>Multip&nbsp;&nbsp;&nbsp;
+                                <input type="radio" name="oper" id="/" value="/"
+                                    <?php if(!empty($_POST)){if($oper=='/'){echo "checked";}} ?>>Divis&nbsp;&nbsp;&nbsp;
+                            </div>
+                        </div>
+                        <!-- resultado -->
+                        <div class="form-group">
+                            <label for="">Resultado:</label>
+                            <p class="control" id="resultado"><?php if(!empty($_POST)){echo $alert;} ?></p>
+
+
+                            <button type="submit" class="boton" name="btn" id="btn"
+                                onclick='calcular()'>Calcular</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="button" class="boton" id="" onclick="limpiardatos();">Limpiar</button>
+                        </div>
+
+                </section>
             </div>
-            <div class="form-group">
-                <div><label for="number2">Número 2</label>
-                    <input class="form-control" type="number" name="number2" id="number2"
-                        value="<?php if(!empty($_POST)){echo $number2;} ?>" required>
-
-                </div>
-                <br>
-                <div class="form-group"><label for="oper">Operador</label>
-                    <select class="form-control" name="oper" id="oper" required>
-                        <option selected disabled value="<?php if(!empty($_POST)){echo $oper;} ?>">
-                            <?php if(!empty($_POST)){echo $oper;}else{echo "Seleccione una Opción";} ?></option>
-                        <option value="+">+</option>
-                        <option value="-">-</option>
-                        <option value="*">*</option>
-                        <option value="/">/</option>
-                    </select>
-                </div>
-                <div ><?php if(!empty($_POST)){echo $alert;} ?></div>
-
-                <button type="submit" class="btn btn-dark">Calcular</button>
         </form>
     </div>
-
+    <?php
+    include "includes/scriptsdown.php";
+    ?>
 </body>
 
 </html>
