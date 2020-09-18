@@ -29,17 +29,22 @@
             </section>
             <div class="row">
                 <div class="columns">
-                <a href="punto1.php"><p class="thumbnail_align"><i class="fa fa-calculator" aria-hidden="true"></i></p>
-                    <h4>PUNTO 1</h4>
-                    <p>Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, división y
-                        multiplicación
-                        de dos números enteros almacenados en 2, variables diferentes (utilice formularios HTML). </p></a>
+                    <a href="punto1.php">
+                        <p class="thumbnail_align"><i class="fa fa-calculator" aria-hidden="true"></i></p>
+                        <h4>PUNTO 1</h4>
+                        <p>Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, división y
+                            multiplicación
+                            de dos números enteros almacenados en 2, variables diferentes (utilice formularios HTML).
+                        </p>
+                    </a>
                 </div>
                 <div class="columns">
-                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
-                    <h4>PUNTO 2</h4>
-                    <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios 
-                        calcular el índice de masa corporal.</p>
+                    <a href="punto2.php">
+                        <p class="thumbnail_align"><i class="fa fa-calculator" aria-hidden="true"></i></p>
+                        <h4>PUNTO 2</h4>
+                        <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus usuarios 
+                            calcular el índice de masa corporal </p>
+                    </a>
                 </div>
                 <div class="columns">
                     <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>

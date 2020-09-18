@@ -58,11 +58,11 @@
     display: inline-block;
 }
 
-.soliturn p {
-    height: 40px;
+.soliturn div p {
+    height: 110px;
     text-align: center;
     font-size: 18 px;
-    line-height: 40px;
+    margin: auto;
 }
 
 .soliturn a {
