@@ -45,18 +45,19 @@ if (!empty($_POST)) {
 <body id="cuerpo">
 
     <div class="container">
-        <h3 class="nav-item active">CALCULADORA</h3>
+        <h3 class="nav-item active">calculadora de 2 números</h3>
         <form action="" name="formulario" id="formulario" method="POST">
             <div class="soli">
                 <section class="soliturn">
                     <h2 id="titulo">POR FAVOR INGRESE LOS DATOS </h2>
-                    <h4 style="text-align: center;">(*) Campos Obligatorios</h4><br>
+                    <h4 style="text-align: center;">(*) Campos Obligatorios</h4>
+                    <img class=""style="width:100%;" src="img/calculadora.png" alt="">
                     <!-- Número UNO -->
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                         <span id="errornumber1"></span>
                         <input class="control" type="number" name="number1" id="number1"
                             placeholder="Ingrese el primer número (*)"
-                            value="<?php if(!empty($_POST)){echo $number1;} ?>">
+                            value="<?php if(!empty($_POST)){echo $number1;} ?>"autocomplete="off">
                     </div>
                     <!-- Número DOS -->
                     <div class="form-group">
@@ -64,7 +65,7 @@ if (!empty($_POST)) {
                             <span id="errornumber2"></span>
                             <input class="control" type="number" name="number2" id="number2"
                                 placeholder="Ingrese el segundo número (*)"
-                                value="<?php if(!empty($_POST)){echo $number2;} ?>">
+                                value="<?php if(!empty($_POST)){echo $number2;} ?>"autocomplete="off">
                         </div>
 
                         <!-- operador -->
@@ -97,15 +98,8 @@ if (!empty($_POST)) {
             </div>
         </form>
     </div>
-    <div class="navbar navbar-expand-lg " id="circulodark">
-                <div class="col-sm">
-                    Dirección: Carrera 29 N°46-36 <br>
-                    Teléfono: 301-508-4623 <br>
-                    Email: willyremi1990@gmail.com <br>
-                    Todos los derechos reservados 2020
-                </div>
-            </div>
-    <?php
+   <?php
+   include "includes/footer.php";
     include "includes/scriptsdown.php";
     ?>
     <script>

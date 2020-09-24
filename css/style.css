@@ -135,6 +135,7 @@ h3 {
     margin: auto;
     margin-top: 15px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 
@@ -631,5 +632,3 @@ body {
 }
 
 #menu {}
-
-</style>

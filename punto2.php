@@ -50,14 +50,14 @@ if (isset($_POST['btn'])) {
             <div class="soli">
                 <section class="soliturn">
                     <h2 id="titulo">POR FAVOR INGRESE LOS DATOS </h2>
-                    <h4 style="text-align: center;">(*) Campos Obligatorios</h4><br>
+                    <h4 style="text-align: center;">(*) Campos Obligatorios</h4>
                     <img style="width:100%;" src="img/bodytech.png" alt="">
                     <!-- Número UNO -->
-                    <div class="form-group">
+                    <div class="form-group mt-3">
                         <span id="erroraltura"></span>
                         <input class="control" type="text" name="altura" id="altura"
                             placeholder="Ingrese la altura en metros (*)"
-                            value="<?php if(isset($_POST['altura'])){echo $altura;} ?>">
+                            value="<?php if(isset($_POST['altura'])){echo $altura;} ?>"autocomplete="off">
                     </div>
                     <!-- Número DOS -->
                     <div class="form-group">
@@ -65,7 +65,7 @@ if (isset($_POST['btn'])) {
                             <span id="errorpeso"></span>
                             <input class="control" type="text" name="peso" id="peso"
                                 placeholder="Ingrese el peso (*)"
-                                value="<?php if(isset($_POST['peso'])){echo $peso;} ?>">
+                                value="<?php if(isset($_POST['peso'])){echo $peso;} ?>"autocomplete="off">
                         </div>
                         <!-- resultado -->
                         <div class="form-group">
@@ -82,15 +82,8 @@ if (isset($_POST['btn'])) {
             </div>
         </form>
     </div>
-    <div class="navbar navbar-expand-lg " id="circulodark">
-        <div class="col-sm">
-            Dirección: Carrera 29 N°46-36 <br>
-            Teléfono: 301-508-4623 <br>
-            Email: willyremi1990@gmail.com <br>
-            Todos los derechos reservados 2020
-        </div>
-    </div>
     <?php
+    include "includes/footer.php";
     include "includes/scriptsdown.php";
     ?>
     <script>
