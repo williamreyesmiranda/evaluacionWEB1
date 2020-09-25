@@ -22,11 +22,11 @@
                         <a class="dropdown-item" href="punto1.php"><i class="fa fa-calculator" aria-hidden="true"></i>
                             Punto 1 (Calculadora)</a>
                         <a class="dropdown-item" href="punto2.php"><i class="fa fa-heartbeat" aria-hidden="true"></i> Punto 2 (Bodytech)</a>
-                        <a class="dropdown-item" href="punto3.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Punto 3 (Spring Step)</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="punto4.php"> Punto 4 (Horas Extras)</a>
-                        <a class="dropdown-item" href="#">De Oficina</a>
-                        <a class="dropdown-item" href="#">Ver Más....</a>
+                        <a class="dropdown-item" href="punto3.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Punto 3 (Spring Step)</a>
+                        
+                        <a class="dropdown-item" href="punto4.php"><i class="fa fa-usd" aria-hidden="true"></i> Punto 4 (Horas Extras)</a>
+                        
                     </div>
                 </li>
 

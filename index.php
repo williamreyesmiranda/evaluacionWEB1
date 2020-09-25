@@ -21,6 +21,8 @@
                     <h3>Contenido</h3>
                     <p>Este es el contenido de trabajo para el taller propuesto por el profesor Juan Gallego,
                         con un plazo máximo de entrega para el 1 de Octubre. <br>
+                        Se puede acceder a los puntos tanto en la opción de Ejercicios de menú, commo en 
+                        la parte de abajo
 
                     </p>
 
@@ -34,13 +36,13 @@
                         <h4>PUNTO 1</h4>
                         <p>Hacer un programa en PHP que permita mostrar en pantalla la suma, resta, división y
                             multiplicación
-                            de dos números enteros almacenados en 2, variables diferentes (utilice formularios HTML).
+                            de dos números enteros almacenados en 2, variables diferentes.
                         </p>
                     </a>
                 </div>
                 <div class="columns">
                     <a href="punto2.php">
-                        <p class="thumbnail_align"><i class="fa fa-calculator" aria-hidden="true"></i></p>
+                        <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
                         <h4>PUNTO 2</h4>
                         <p>El gimnasio Bodytech, lo contrata para desarrollar una aplicación web que permita a sus
                             usuarios
@@ -58,7 +60,7 @@
                 </div>
                 <div class="columns">
                     <a href="punto4.php">
-                        <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
+                        <p class="thumbnail_align"><i class="fa fa-usd" aria-hidden="true"></i></p>
                         <h4>PUNTO 4</h4>
                         <p>Hacer un programa en PHP para ayudar a un trabajador de
                             Postobón a saber cuál será su sueldo semanal, se sabe que, si
@@ -67,20 +69,7 @@
                             pagarán a $25000 por hora.</p>
                     </a>
                 </div>
-                <div class="columns">
-                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
-                    <h4>TITLE</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
-                <div class="columns">
-                    <p class="thumbnail_align"><i class="fa fa-heartbeat" aria-hidden="true"></i></p>
-                    <h4>TITLE4</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                </div>
+                
             </div>
         </div>
         <center>
