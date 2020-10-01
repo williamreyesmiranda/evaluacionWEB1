@@ -42,6 +42,7 @@ if($numTrab<=40){
                     <h2 id="titulo">POR FAVOR INGRESE LOS DATOS </h2>
                     <h4 style="text-align: center;">(*) Campos Obligatorios</h4>
                     <img style="width:100%; height:200px" src="img/postobon.png" alt="">
+                   
                     <!-- Número UNO -->
                     <div class="form-group mt-3">
                         <span id="errornumTrab"></span>
